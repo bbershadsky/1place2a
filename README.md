@@ -9,6 +9,16 @@ Live site: https://1place2.vercel.app
 Updating types from supabase into Typescript: 
 `npx supabase gen types typescript --project-id mfbrihozfltjbiqdzndr > lib/database.types.ts`
 
+Push to Vercel `vc deploy --prod`
+
+## Forking?
+
+Add your Supabase variables to .env.local and make sure to setup the correct tables with Row Level Security
+```
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
 ## TODO
 
 * Set up Public API for future Flutter integration
@@ -21,7 +31,7 @@ Updating types from supabase into Typescript:
 
 https://www.youtube.com/shorts/BzYDxLH-tdw improved TwitterUX
 
-Adopted from 
+Adapted from 
 **[📹 Egghead.io](https://egghead.io/lessons/deploy-next-js-app-router-project-to-production-with-vercel)**
 
 [Vercel](https://vercel.com) is a hosting platform that works very well with [Next.js](https://nextjs.org) - because it's their framework! In this lesson, we prepare our project to be deployed to production by:
