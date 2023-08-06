@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 1Place2α (AllChat)
 
-## Getting Started
+Bespoke Twitter clone using NextJS, Typescript, Supabase, and TailwindCSS.
 
-First, run the development server:
+Live site: https://1place2.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Utilities
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Updating types from supabase into Typescript: 
+`npx supabase gen types typescript --project-id mfbrihozfltjbiqdzndr > lib/database.types.ts`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## TODO
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Set up Public API for future Flutter integration
+* Add channels
+* Add delete/report functionality
+* Internationalization support
+* Upload media to post
 
-## Learn More
+### Resources + Inspiration
 
-To learn more about Next.js, take a look at the following resources:
+https://www.youtube.com/shorts/BzYDxLH-tdw improved TwitterUX
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Adopted from 
+**[📹 Egghead.io](https://egghead.io/lessons/deploy-next-js-app-router-project-to-production-with-vercel)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Vercel](https://vercel.com) is a hosting platform that works very well with [Next.js](https://nextjs.org) - because it's their framework! In this lesson, we prepare our project to be deployed to production by:
 
-## Deploy on Vercel
+- Pushing code to [GitHub](https://github.com/)
+- Deploying repo to [Vercel](https://vercel.com)
+- Updating [GitHub OAuth app](https://github.com/settings/developers) to use production URL
+- Updating [Supabase](https://supabase.com/) project to use production URL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Deploy Next.js to Vercel guide](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy)
+- [GitHub OAuth App settings](https://github.com/settings/developers)
+- [Vercel](https://vercel.com)
+- [Supabase URL configuration](https://app.supabase.com/project/_/auth/url-configuration)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Part of Boris Bershadsky's Portfolio for https://borisb.ca
